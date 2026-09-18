@@ -1,15 +1,25 @@
-# Truth-Tree-App
-This Application turns Arguments into truth trees.
+#Truth Tree App
+This application turns logical arguments into truth trees and generates truth tables.
 
-//IN TERMINAL: 
+## In Terminal
 
-First, start the python backend server:
--change directory to backend: cd C:\Users\louis\Downloads\Truth-Tree-App\logic-backend
--activate virtual environment: .\.venv\Scripts\Activate.ps1
-*restarting backend: python -m uvicorn main:app --host 0.0.0.0 --port 8000 --reload
-**leave this terminal window open whilst using 
-***site for testing if server works = http://192.168.50.131:8000/health
+First, start the Python backend server:
 
-Then, start expo to load the app:
--change directory to logic-app: cd C:\Users\louis\Downloads\Truth-Tree-App\logic-app
--start expo with cache clear= npx expo start -c
+    cd logic-backend
+    .venv\Scripts\Activate.ps1
+    python -m uvicorn main:app --host 0.0.0.0 --port 8000 --reload
+
+Leave this terminal open while using the application.
+
+To test that the backend is running, open:
+
+    http://localhost:8000/health
+
+Then, in a new terminal, start Expo:
+
+    cd logic-app
+    npx expo start -c
+
+Open the application through Expo Go.
+
+For physical-device testing, make sure the phone and computer are on the same network and that `EXPO_PUBLIC_API_BASE_URL` in `logic-app/.env` points to the computer's local IP address on port 8000.
