@@ -1,4 +1,4 @@
-##Truth Tree App
+## Truth Tree App
 
 This application turns logical arguments into truth trees and generates truth tables.
 
